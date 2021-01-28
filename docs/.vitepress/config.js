@@ -1,22 +1,23 @@
+const BASE = "/new-blog/";
 module.exports = {
   title: "博客",
-  base: "/new-blog/",
+  base: BASE,
   themeConfig: {
     nav: [
       {
         text: "英语",
         link: "/english/index",
-        activeMatch: "^/english/",
+        activeMatch: "/english/",
       },
       {
         text: "算法",
         link: "/algorithm/index",
-        activeMatch: "^/algorithm/",
+        activeMatch: "/algorithm/",
       },
       {
         text: "工具助手",
         link: "/helper/command",
-        activeMatch: "^/helper/",
+        activeMatch: "/helper/",
       },
       {
         text: "Github",
@@ -24,10 +25,10 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/english/": require("../english/router"),
-      "/algorithm/": require("../algorithm/router"),
-      "/helper/": require("../helper/router"),
-      "/": require("../base/router"),
+      [`${BASE}english/`]: require("../english/router"),
+      [`${BASE}algorithm/`]: require("../algorithm/router"),
+      [`${BASE}helper/`]: require("../helper/router"),
+      [`${BASE}`]: require("../base/router"),
     },
   },
 };
