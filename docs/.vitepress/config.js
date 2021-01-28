@@ -1,5 +1,6 @@
 module.exports = {
   title: "博客",
+  base: "/new-blog/",
   themeConfig: {
     nav: [
       {
