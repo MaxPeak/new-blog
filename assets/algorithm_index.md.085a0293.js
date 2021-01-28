@@ -1,0 +1,1 @@
+import{o as t,c as e,a as r}from"./app.78d90085.js";const a='{"title":"","description":"","frontmatter":{},"relativePath":"algorithm/index.md","lastUpdated":1611839164776}',n={},o=r("p",null,"算法板块",-1);n.render=function(r,a,n,d,i,l){return t(),e("div",null,[o])};export default n;export{a as __pageData};

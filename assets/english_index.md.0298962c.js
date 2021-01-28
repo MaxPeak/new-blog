@@ -1,0 +1,1 @@
+import{o as t,c as e,a as r}from"./app.78d90085.js";const a='{"title":"","description":"","frontmatter":{},"relativePath":"english/index.md","lastUpdated":1611839164780}',n={},d=r("p",null,"英语板块",-1);n.render=function(r,a,n,i,l,o){return t(),e("div",null,[d])};export default n;export{a as __pageData};
