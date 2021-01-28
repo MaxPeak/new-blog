@@ -1,0 +1,1 @@
+import{a as t,b as e}from"./framework.299d0cbd.js";import{b as o}from"./Debug.585f37cd.js";const r='{"title":"","description":"","frontmatter":{},"relativePath":"index.md","lastUpdated":1611830095976}',s={};const a=Object.assign(s,{expose:[],setup:function(r){return o().go("/base/html"),(o,r)=>(t(),e("div"))}});export default a;export{r as __pageData};

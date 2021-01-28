@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      正则表达式是什么 | 博客
+    </title>
+    <meta name="description" content="A VitePress site">
+    <link rel="stylesheet" href="/assets/style.c6cf0b86.css">
+    <link rel="modulepreload" href="/assets/framework.299d0cbd.js">
+    <link rel="modulepreload" href="/assets/Debug.585f37cd.js">
+    <link rel="modulepreload" href="/assets/Home.9c101866.js">
+    <link rel="modulepreload" href="/assets/base_regxep.md.c24bfa1e.lean.js">
+    <link rel="modulepreload" href="/assets/app.40d9390c.js">
+    
+    
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-6e7c0b86><div class="sidebar-button" data-v-6e7c0b86><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/" aria-label="博客, back to home" data-v-6e7c0b86 data-v-00c3af85><!----> 博客</a><div class="flex-grow" data-v-6e7c0b86></div><div class="nav" data-v-6e7c0b86><nav class="nav-links" data-v-6e7c0b86 data-v-f465d38e><!--[--><div class="item" data-v-f465d38e><div class="nav-link" data-v-f465d38e data-v-98431d6e><a class="item" href="/english/index" data-v-98431d6e>英语 <!----></a></div></div><div class="item" data-v-f465d38e><div class="nav-link" data-v-f465d38e data-v-98431d6e><a class="item" href="/algorithm/index" data-v-98431d6e>算法 <!----></a></div></div><div class="item" data-v-f465d38e><div class="nav-link" data-v-f465d38e data-v-98431d6e><a class="item" href="/helper/command" data-v-98431d6e>工具助手 <!----></a></div></div><div class="item" data-v-f465d38e><div class="nav-link" data-v-f465d38e data-v-98431d6e><a class="item isExternal" href="https://github.com/MaxPeak" target="_blank" rel="noopener noreferrer" data-v-98431d6e>Github <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-98431d6e><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div><!--]--><!----><!----></nav></div><!--[--><!--]--></header><aside class="sidebar" data-v-58e261f2><nav class="nav-links nav" data-v-58e261f2 data-v-f465d38e><!--[--><div class="item" data-v-f465d38e><div class="nav-link" data-v-f465d38e data-v-98431d6e><a class="item" href="/english/index" data-v-98431d6e>英语 <!----></a></div></div><div class="item" data-v-f465d38e><div class="nav-link" data-v-f465d38e data-v-98431d6e><a class="item" href="/algorithm/index" data-v-98431d6e>算法 <!----></a></div></div><div class="item" data-v-f465d38e><div class="nav-link" data-v-f465d38e data-v-98431d6e><a class="item" href="/helper/command" data-v-98431d6e>工具助手 <!----></a></div></div><div class="item" data-v-f465d38e><div class="nav-link" data-v-f465d38e data-v-98431d6e><a class="item isExternal" href="https://github.com/MaxPeak" target="_blank" rel="noopener noreferrer" data-v-98431d6e>Github <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-98431d6e><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div><!--]--><!----><!----></nav><!--[--><!--]--><ul class="sidebar-links" data-v-58e261f2><!--[--><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/html" data-v-58e261f2>HTML</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/css" data-v-58e261f2>CSS</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/js" data-v-58e261f2>JS</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/nodejs" data-v-58e261f2>NodeJS</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item active" href="/base/regxep" data-v-58e261f2>正则表达式</a><ul class="sidebar-links" data-v-58e261f2><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="#正则表达式是什么" data-v-58e261f2>正则表达式是什么</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="#元字符" data-v-58e261f2>元字符</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="#量词" data-v-58e261f2>量词</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="#标识符" data-v-58e261f2>标识符</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="#子集" data-v-58e261f2>子集</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="#范围词" data-v-58e261f2>范围词</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="#断言" data-v-58e261f2>断言</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="#一些特殊的符号" data-v-58e261f2>一些特殊的符号</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="#_1-的应用" data-v-58e261f2>\1 的应用</a><!----></li></ul></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/framework" data-v-58e261f2>框架</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/paradigm" data-v-58e261f2>编程范式</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/algorithm" data-v-58e261f2>算法</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/data-structure" data-v-58e261f2>数据结构</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/design-pattern" data-v-58e261f2>设计模式</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/model" data-v-58e261f2>MV*模型</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/browser" data-v-58e261f2>浏览器</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/http" data-v-58e261f2>网络</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/engineered" data-v-58e261f2>工程化</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/development" data-v-58e261f2>开发调试</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/security" data-v-58e261f2>安全</a><!----></li><li class="sidebar-link" data-v-58e261f2 data-v-58e261f2><a class="sidebar-link-item" href="/base/optimize" data-v-58e261f2>性能优化</a><!----></li><!--]--></ul><!--[--><!--]--></aside><!-- TODO: make this button accessible --><div class="sidebar-mask"></div><main class="page" data-v-b109f666><div class="container" data-v-b109f666><!--[--><!--]--><div class="content" data-v-b109f666><div data-v-b109f666><h2 id="正则表达式是什么"><a class="header-anchor" href="#正则表达式是什么" aria-hidden="true">#</a> 正则表达式是什么</h2><p>检索替换字符串的一套规则</p><h2 id="元字符"><a class="header-anchor" href="#元字符" aria-hidden="true">#</a> 元字符</h2><div class="language-js"><pre><code>\ 转义符
+
+\d <span class="token punctuation">[</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">]</span>
+
+\<span class="token constant">D</span> 非数字
+
+\s 空格
+
+\<span class="token constant">S</span> 非空格
+
+\w 字符（数字、字母、_）
+
+\<span class="token constant">W</span> 非\w所匹配范围
+
+\b <span class="token function">单词边界，就是指单词和空格之间的位置（单词边界，单词起始、结束，连词符</span><span class="token punctuation">(</span>除了\w之外的所有的字符都属于连词符<span class="token punctuation">)</span>）
+
+\<span class="token constant">B</span> 非\b部分
+
+<span class="token punctuation">.</span>  <span class="token function">除了换行符</span><span class="token punctuation">(</span>\n、\r<span class="token punctuation">)</span>之外的所有的字符都是它匹配范围
+
+<span class="token operator">^</span>  字符串的起始  <span class="token operator">^</span>符在范围词里面代表的是<span class="token string">&#39;非&#39;</span>的意思
+
+$  字符串的结束
+</code></pre></div><h2 id="量词"><a class="header-anchor" href="#量词" aria-hidden="true">#</a> 量词</h2><div class="language-js"><pre><code>量词<span class="token operator">:</span>默认情况是贪婪匹配，以最高次匹配，如果不成功就依次降低次数，直到到最低次
+
+<span class="token punctuation">{</span>最小次<span class="token punctuation">,</span>最大次<span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token punctuation">}</span>  最少五次，最高无穷大
+
+<span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token punctuation">}</span>  对应 <span class="token operator">*</span>号  表示<span class="token number">0</span>次或多次
+<span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">}</span>  对应 <span class="token operator">+</span>号  表示<span class="token number">1</span>次或多次
+<span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">}</span> 对应 <span class="token operator">?</span>号  表示<span class="token number">0</span>次或<span class="token number">1</span>次，可有可无
+
+非贪婪匹配<span class="token operator">:</span>量词之后跟问号，代表非贪婪，以最少次匹配
+</code></pre></div><h2 id="标识符"><a class="header-anchor" href="#标识符" aria-hidden="true">#</a> 标识符</h2><div class="language-js"><pre><code>i  忽略大小写
+
+g  全局匹配  这个标识符要慎用<span class="token punctuation">,</span>因为它会改变正则对象的lastIndex属性
+
+m  多行匹配  此标识符只会在使用<span class="token operator">^</span>和$的正则表达式中才可能有效
+</code></pre></div><div class="language-js"><pre><code><span class="token comment">//全局标识符g会改变lastIndex从而改变下面的结果</span>
+<span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">&quot;11112223333333&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d+</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg<span class="token punctuation">.</span>lastIndex<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//0</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//true</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg<span class="token punctuation">.</span>lastIndex<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//14</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//false</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg<span class="token punctuation">.</span>lastIndex<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//0</span>
+
+<span class="token comment">// 解决办法，在对应的地方手动重置为0</span>
+reg<span class="token punctuation">.</span>lastIndex <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="子集"><a class="header-anchor" href="#子集" aria-hidden="true">#</a> 子集</h2><div class="language-js"><pre><code><span class="token function">子集</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token function">被圆括号包裹的部分属于一个整体</span><span class="token punctuation">(</span>子集<span class="token punctuation">)</span>
+
+$<span class="token number">1</span> <span class="token operator">-</span> $n  对应的是正则里面匹配的子集 第一个就是$<span class="token number">1</span> 依次类推
+</code></pre></div><div class="language-js"><pre><code><span class="token comment">//子集$的应用</span>
+<span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">&quot;第一段第二段&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(第一段)(第二段)</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> s2 <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>reg<span class="token punctuation">,</span> <span class="token string">&quot;$2$1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s2<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 第二段第一段</span>
+</code></pre></div><h2 id="范围词"><a class="header-anchor" href="#范围词" aria-hidden="true">#</a> 范围词</h2><div class="language-js"><pre><code>范围词 <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+范围词里所有的字符串都是或者关系
+
+<span class="token punctuation">[</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">]</span> <span class="token operator">==</span><span class="token operator">&gt;</span> \d  <span class="token number">0123456789</span>
+
+<span class="token punctuation">[</span>a<span class="token operator">-</span>zA<span class="token operator">-</span><span class="token constant">Z</span><span class="token punctuation">]</span> <span class="token operator">==</span><span class="token operator">&gt;</span> 英文字母
+
+<span class="token punctuation">[</span>\u4e00<span class="token operator">-</span>\u9fa5<span class="token punctuation">]</span> <span class="token operator">==</span><span class="token operator">&gt;</span> 中文汉字的Unicode编码
+
+<span class="token operator">|</span>  要想在多个不同的范围词之间用或者关系用 <span class="token operator">|</span> 符号<span class="token punctuation">,</span>不同范围词用子集来表示一个整体
+</code></pre></div><h2 id="断言"><a class="header-anchor" href="#断言" aria-hidden="true">#</a> 断言</h2><div class="language-js"><pre><code><span class="token function">子集不捕获匹配</span>  <span class="token punctuation">(</span><span class="token operator">?</span><span class="token operator">:</span>模式<span class="token punctuation">)</span> 子集默认是捕获匹配
+
+<span class="token function">正向肯定预查</span> <span class="token punctuation">(</span><span class="token operator">?</span><span class="token operator">=</span>模式<span class="token punctuation">)</span>
+
+<span class="token function">正向否定预查</span> <span class="token punctuation">(</span><span class="token operator">?</span><span class="token operator">!</span>模式<span class="token punctuation">)</span>
+
+<span class="token function">反向肯定预查</span><span class="token punctuation">(</span><span class="token operator">?</span><span class="token operator">&lt;=</span>模式<span class="token punctuation">)</span>
+
+<span class="token function">反向否定预查</span><span class="token punctuation">(</span><span class="token operator">?</span><span class="token operator">&lt;</span><span class="token operator">!</span>模式<span class="token punctuation">)</span>
+</code></pre></div><div class="language-js"><pre><code><span class="token comment">//正向肯定预查的应用 正向否定预查结果相反</span>
+<span class="token keyword">let</span> str1 <span class="token operator">=</span> <span class="token string">&quot;test123&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> str2 <span class="token operator">=</span> <span class="token string">&quot;test456&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">test(?=123)</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span> <span class="token comment">//如果尾数是123就要 否则就不要</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>str1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//true</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>str2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//false</span>
+
+<span class="token comment">//反向肯定预查的应用 反向否定预查结果相反</span>
+<span class="token keyword">let</span> str3 <span class="token operator">=</span> <span class="token string">&quot;123test&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> str4 <span class="token operator">=</span> <span class="token string">&quot;456test&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> reg1 <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(?&lt;=123)test</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg1<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>str3<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//true</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg1<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>str4<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//false</span>
+</code></pre></div><h2 id="一些特殊的符号"><a class="header-anchor" href="#一些特殊的符号" aria-hidden="true">#</a> 一些特殊的符号</h2><div class="language-js"><pre><code>\t 水平制表符
+
+\v 垂直制表符
+
+\f 换页符
+
+\n 换行符
+
+\r 回车符
+</code></pre></div><h2 id="_1-的应用"><a class="header-anchor" href="#_1-的应用" aria-hidden="true">#</a> \1 的应用</h2><div class="language-js"><pre><code><span class="token comment">//  \1的应用 匹配相同且重复的内容 必须在有子集出现的情况下才能用</span>
+<span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">&quot;1111222333&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(\d)\1+</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [&#39;1111&#39;,&#39;222&#39;,&#39;333&#39;]</span>
+</code></pre></div></div></div><footer class="page-footer" data-v-b109f666 data-v-5a019cc9><div class="edit" data-v-5a019cc9><div class="edit-link" data-v-5a019cc9 data-v-fb0131f2><!----></div></div><div class="updated" data-v-5a019cc9><!----></div></footer><div class="next-and-prev-link" data-v-b109f666 data-v-6683615c><div class="container" data-v-6683615c><div class="prev" data-v-6683615c><a class="link" href="/base/nodejs" data-v-6683615c><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-prev" data-v-6683615c><path d="M19,11H7.4l5.3-5.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0l-7,7c-0.1,0.1-0.2,0.2-0.2,0.3c-0.1,0.2-0.1,0.5,0,0.8c0.1,0.1,0.1,0.2,0.2,0.3l7,7c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L7.4,13H19c0.6,0,1-0.4,1-1S19.6,11,19,11z"></path></svg><span class="text" data-v-6683615c>NodeJS</span></a></div><div class="next" data-v-6683615c><a class="link" href="/base/framework" data-v-6683615c><span class="text" data-v-6683615c>框架</span><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-next" data-v-6683615c><path d="M19.9,12.4c0.1-0.2,0.1-0.5,0-0.8c-0.1-0.1-0.1-0.2-0.2-0.3l-7-7c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l5.3,5.3H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h11.6l-5.3,5.3c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l7-7C19.8,12.6,19.9,12.5,19.9,12.4z"></path></svg></a></div></div></div><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"index.md\":\"c84484cd\",\"algorithm_index.md\":\"55cbdb84\",\"base_algorithm.md\":\"f0bcc379\",\"base_browser.md\":\"312d5cd6\",\"base_css.md\":\"27bbf963\",\"base_data-structure.md\":\"4e28cfdb\",\"base_design-pattern.md\":\"041b71fa\",\"base_development.md\":\"999e6270\",\"base_engineered.md\":\"8bd5ba9d\",\"base_framework.md\":\"99d0c915\",\"base_html.md\":\"5830dc45\",\"base_http.md\":\"f5b1e251\",\"base_js.md\":\"c27a3e5b\",\"base_model.md\":\"175ab45d\",\"base_nodejs.md\":\"e04269f5\",\"base_optimize.md\":\"2bfc346e\",\"base_paradigm.md\":\"37bbcc17\",\"base_regxep.md\":\"c24bfa1e\",\"base_security.md\":\"c4532729\",\"english_index.md\":\"997e219c\",\"helper_command.md\":\"c966e50d\"}")</script>
+    <script type="module" async src="/assets/app.40d9390c.js"></script>
+  </body>
+</html>
