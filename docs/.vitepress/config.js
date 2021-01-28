@@ -1,7 +1,10 @@
-const BASE = "/new-blog/";
+const getBase = () => {
+  const isDev = process.env.NODE_ENV === "development";
+  return isDev ? "/" : "/new-blog/";
+};
 module.exports = {
   title: "博客",
-  base: BASE,
+  base: getBase(),
   themeConfig: {
     nav: [
       {
@@ -25,10 +28,10 @@ module.exports = {
       },
     ],
     sidebar: {
-      [`${BASE}english/`]: require("../english/router"),
-      [`${BASE}algorithm/`]: require("../algorithm/router"),
-      [`${BASE}helper/`]: require("../helper/router"),
-      [`${BASE}`]: require("../base/router"),
+      [`${getBase()}english/`]: require("../english/router"),
+      [`${getBase()}algorithm/`]: require("../algorithm/router"),
+      [`${getBase()}helper/`]: require("../helper/router"),
+      [`${getBase()}`]: require("../base/router"),
     },
   },
 };
