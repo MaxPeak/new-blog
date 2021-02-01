@@ -9,7 +9,7 @@ module.exports = {
     nav: [
       {
         text: "英语",
-        link: "/english/index",
+        link: "/english/base",
         activeMatch: "/english/",
       },
       {
