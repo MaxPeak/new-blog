@@ -9,6 +9,7 @@ module.exports = [
   { text: "编程范式", link: `${PATH}/paradigm` },
   { text: "算法", link: `${PATH}/algorithm` },
   { text: "数据结构", link: `${PATH}/data-structure` },
+  { text: "编译原理", link: `${PATH}/compilation` },
   { text: "设计模式", link: `${PATH}/design-pattern` },
   { text: "MV*模型", link: `${PATH}/model` },
   { text: "浏览器", link: `${PATH}/browser` },
