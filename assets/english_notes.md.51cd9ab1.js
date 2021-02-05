@@ -1,1 +1,0 @@
-import{o as t,c as e,a}from"./app.7ac1b5c9.js";const r='{"title":"","description":"","frontmatter":{},"relativePath":"english/notes.md","lastUpdated":1612168089577}',n={},o=a("p",null,"笔记",-1);n.render=function(a,r,n,l,s,i){return t(),e("div",null,[o])};export default n;export{r as __pageData};
