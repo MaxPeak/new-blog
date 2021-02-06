@@ -13,15 +13,29 @@
 ### 装机必备
 
 - Homebrew
+- zsh
 - Visual Studio Code
 - Chrome
 - ClashX
 - Proxifier
 - Alfred4
-- eZip
-- IINA
+
+### 可选
+
 - Iterm2
 - Mounty
+- IINA
+- eZip
+- typora
+- xmind
+- postman
+- sourcetree
+- teamviewer
+- docker
+- zoom/腾讯会议
+- 微信
+- qq
+- 企业微信
 
 ### 配置
 
@@ -61,7 +75,6 @@
   - start at login
   - show network indicator
   - allow connect from lan
-- oh-my-zsh
 
 ## vscode
 
@@ -115,8 +128,13 @@ option + click 插入光标
 - Eslint
 - Prettier
 - Vetur
+
+### 可选
+
 - Live Server
 - i18n Ally
+- Auto Close Tag
+- Auto Rename Tag
 
 ## chrome
 
@@ -139,8 +157,11 @@ command + shift + delete 删除浏览器缓存
 - Adblock Plus
 - FeHelper
 - Octotree
-- 掘金
 - 沙拉查词
+- Web Vitals
+
+### 可选
+
+- 掘金
 - React Developer Tools
 - Vue.js devtools
-- Web Vitals
