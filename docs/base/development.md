@@ -4,16 +4,18 @@
 
 ### 恢复出厂
 
-- 首先重启 Mac，同时按住 command +R 键进入恢复模式，我们就能看 Mac OS X 实用工具
-- 选择磁盘工具–然后选择上面 一般是 Macintosh HD 这个选项，右侧选择抹掉 。意思就是删除所有内容重新安装新的系统
-- 重新启动 Mac，这时出现地球标志，等待更新完成。（根据不同网络情况，需要的时间也不同，一般来说需要 5~20 个小时，这期间要保持 Mac 处于工作状态不能断电关机）
-- 这里选择重新安装 Mac OS X5、根据提示选择下一步，等待安装即可
-- 根据提示选择下一步，等待安装即可
-
+- 首先重启 Mac，同时按住 command + option + R 键进入恢复模式
+- 选择Wi-Fi联网
+- 选择磁盘工具–如果磁盘空间不足可以删除当前系统的数据卷，然后新建一个数据卷
+- 然后返回主页面，选择install Big Sur
+  - 如果出现电脑开机提示硬盘锁定
+  - 打开硬盘工具删除掉未挂载的那个空数据卷
+  - 然后重启
 ### 装机必备
 
+- SwitchHosts
 - Homebrew
-- zsh
+- oh-my-zsh
 - Visual Studio Code
 - Chrome
 - ClashX
@@ -40,12 +42,24 @@
 ### 配置
 
 - DNS
-  - 114.114.114.114（国内移动、电信和联通通用的）
-  - 8.8.8.8（Google 提供的免费）
+  - 114.114.114.114（国内移动、电信和联通通用）
+  - 8.8.8.8（Google）
 - Homebrew
   - Git
+    - git config --global user.name 'xxx'
+    - git config --global user.email 'xxx'
+    - ssh-keygen -t rsa（生成ssh）
+    - cat ~/.ssh/id_rsa.pub复制ssh到GitHub ssh
   - nvm
+    - 创建nvm工作目录
+    - 在~/.zshrc添加nvm配置
+      ```
+      export NVM_DIR="$HOME/.nvm"
+      [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+      [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+      ```
 - Npm
+  - yarn
   - nrm
   - commitizen
   - git-cz
@@ -57,24 +71,8 @@
   - https://www.npmjs.com/search?q={query}
   - http://fanyi.youdao.com/
   - https://zh.javascript.info/search/?query={query}
-- Proxifier
-  - proxies:
-    - addr:127.0.0.1
-    - port:7891
-    - protocol:socks5
-- ClashX
-  - Remote Configs
-    - url:https://cn.neworld.date/link/vOg4KUlRUtqPkWPe?clash=1
-    - name:great
-  - Proxy Mode：rule
-  - domestic:DIRECT
-  - asianTV:domestic
-  - globalTV:Proxy
-  - others:Proxy
-  - set as system proxy
-  - start at login
-  - show network indicator
-  - allow connect from lan
+- SwitchHosts
+  - 199.232.68.133	raw.githubusercontent.com （解决GitHub DNS污染问题）
 
 ## vscode
 
