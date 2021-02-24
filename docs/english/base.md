@@ -127,3 +127,46 @@ DJ 音标和 KK 音标都是国际音标的一种
 - 清辅音结尾的单词后面加上了`ed`读[t]
 - 非清辅音结尾的单词后面加上了`ed`读[d]
 - `t`和`d`结尾的单词后面加上了`ed`读[Id]
+
+## 时态
+
+### 基础
+
+通过基础的时态可以推到出剩下的所有时态
+
+现在时：记住基础的三个就行（do、be doing、have done）
+过去时公式：第一个助动词变成过去时 + 剩下的现在时
+将来时公式：will + 动词原型
+过去将来公式：would + 动词原型
+
+现在完成进行公式：现在完成 + 现在进行 = have done + be doing = have (be doing) ne = have been doing
+
+被动时态只需要记住被动时态最基础的（do => be done），剩下的就能推导出来
+被动的现在时公式：主动的现在时 + be done = 主动的现在时的最后一个词去和 be done 进行改造
+现在进行 = be doing + be done = be (be done) ing = be being done
+现在完成 = have done + be done = have (be done) ne = have been done
+现在完成进行 = have been doing + be done = have been (be done) ing = have been being done
+
+|      | 过去 | 现在      | 将来    |
+| ---- | ---- | --------- | ------- |
+| 一般 | did  | do        | will do |
+| 进行 |      | be doing  |         |
+| 完成 |      | have done |         |
+
+### 主动（16）
+
+|          | 过去           | 现在            | 将来                 | 过去将来              |
+| -------- | -------------- | --------------- | -------------------- | --------------------- |
+| 一般     | did            | do              | will do              | would do              |
+| 进行     | was/were doing | be doing        | will be doing        | would be doing        |
+| 完成     | had done       | have done       | will have done       | would have done       |
+| 完成进行 | had been doing | have been doing | will have been doing | would have been doing |
+
+### 被动（16）
+
+|          | 过去                | 现在                 | 将来                      | 过去将来                   |
+| -------- | ------------------- | -------------------- | ------------------------- | -------------------------- |
+| 一般     | was/were done       | be done              | will be done              | would be done              |
+| 进行     | was/were being done | be being done        | will be being done        | would be being done        |
+| 完成     | had been done       | have been done       | will have been done       | would have been done       |
+| 完成进行 | had been being done | have been being done | will have been being done | would have been being done |
