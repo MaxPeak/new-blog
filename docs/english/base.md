@@ -170,3 +170,77 @@ DJ 音标和 KK 音标都是国际音标的一种
 | 进行     | was/were being done | be being done        | will be being done        | would be being done        |
 | 完成     | had been done       | have been done       | will have been done       | would have been done       |
 | 完成进行 | had been being done | have been being done | will have been being done | would have been being done |
+
+## 造句
+
+### A & An
+
+- a 是元音，a 后面的单词开头如果不是元音就用 a
+- an 是元音的辅音，a 后面的单词开头如果是元音就用 an
+
+### 五种简单句
+
+- 主 + 谓 + 宾
+- 主 + 谓
+- 主 + 系 + 表
+- 主 + 谓 + 宾 1 + 宾 2
+- 主 + 谓 + 宾 + 宾补
+
+### 对主干句型进行添定加状
+
+- 定语：修饰名词，挨着名词，在其前后加，可以是名词、形容词
+- 前置定语（单个的独立的词）
+- 后置定语（短语/句子），需要提到名词前面来翻译
+- 定语从句：句子修饰名词
+- 前置定语语序和中文一样，后置定语提到名词前面来翻译，状语也遵循此规则
+- 定语前置的词序：美丑 + 大小 + 形状 + 新旧 + 颜色 + 国籍 + 材料 + 用途
+
+:::tip
+例：
+
+中：一朵美丽的小红花
+
+译：a **beautiful little red** flower
+
+中：我有一个日本制造的木质红色大圆新桌
+
+译：I have a **big round new red Japanese wooden** table
+:::
+
+- 状语：修饰动词/形容词
+- 前置状语（不确定）
+- 后置状语（短语/句子/单个的词）
+
+### 非谓语（动词）
+
+一个句子只能有一个谓语，其他的谓语需要变成非谓语，转换公式如下：
+
+- to do：未发生
+- doing：动名词（动词表名词）
+- doing：存在发生这个行为动作（主动）
+- done：存在发生这个行为动作（被动）
+
+### 中译英
+
+- 去掉修饰找主干
+  - （1）去定语：找“的”
+  - （2）去状语：找“在”、“地”
+- 加上修饰
+
+:::tip
+例：
+
+中：一个称自己 Scott 的男人需要一些水
+
+译：A man **calling himself Scott** needed some water
+
+这里**calling himself Scott**是根据非谓语的第三条规则转换而来，原句**call himself Scott**
+
+中：在那哭的小男孩想要玩电脑游戏
+
+译：The little boy **crying over there** wants to play computer games
+
+这里**crying over there**是根据非谓语的第三条规则转换而来，原句**cry over there**
+
+little 为前置定语，crying over there 为后置定语
+:::
