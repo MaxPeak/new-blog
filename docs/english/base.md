@@ -171,6 +171,45 @@ DJ 音标和 KK 音标都是国际音标的一种
 | 完成     | had been done       | have been done       | will have been done       | would have been done       |
 | 完成进行 | had been being done | have been being done | will have been being done | would have been being done |
 
+### 应用
+
+- 公式：利用公式推导出时态
+- 应用：分析时态
+- 情形：举例
+- 用词：造句
+
+:::tip
+例：
+
+公式：过去完成的被动 had done + (be done) ne = had been done
+
+应用：过去的过去 + 被动
+
+情形：他走之前工作就做完了
+
+用词：Before he want out the job had been finished.
+
+---
+
+公式：一般过去将来的被动 would do + (be done) ne = would be done
+
+应用：从过去看以后发生的事 + 被动
+
+情形：Alex 说这本书年底会出版
+
+用词：Alex said the book would be published.
+
+---
+
+公式：现在完成进行时 have done + (be doing) = have been doing
+
+应用：从过去到现在 + 一直在发生
+
+情形：我今晚一直在上课
+
+用词：I have been having a class tonight.
+:::
+
 ## 造句
 
 ### A & An
@@ -202,6 +241,8 @@ DJ 音标和 KK 音标都是国际音标的一种
 
 译：a **beautiful little red** flower
 
+---
+
 中：我有一个日本制造的木质红色大圆新桌
 
 译：I have a **big round new red Japanese wooden** table
@@ -213,12 +254,27 @@ DJ 音标和 KK 音标都是国际音标的一种
 
 ### 非谓语（动词）
 
-一个句子只能有一个谓语，其他的谓语需要变成非谓语，转换公式如下：
+一个句子只能有一个谓语动词，其他的谓语需要变成非谓语，转换公式如下：
 
-- to do：未发生
+- to do：不定式表未发生
 - doing：动名词（动词表名词）
-- doing：存在发生这个行为动作（主动）
-- done：存在发生这个行为动作（被动）
+- doing：现在分词表存在发生这个行为动作（主动）
+- done：过去分词表存在发生这个行为动作（被动）s
+
+非谓语词性
+
+|                     | 主  | 宾  | 定  | 状  | 补  | 表  |
+| ------------------- | --- | --- | --- | --- | --- | --- |
+| 不定式 （名/形/副） | Y   | Y   | Y   | Y   | Y   | Y   |
+| 动名词 （名）       | Y   | Y   | Y   |     |     | Y   |
+| 分词 （形/副）      |     |     | Y   | Y   | Y   | Y   |
+
+### 系动词
+
+- be 动词
+- 感官动词
+- 变化类动词
+- 保持类动词
 
 ### 中译英
 
@@ -235,6 +291,8 @@ DJ 音标和 KK 音标都是国际音标的一种
 译：A man **calling himself Scott** needed some water
 
 这里**calling himself Scott**是根据非谓语的第三条规则转换而来，原句**call himself Scott**
+
+---
 
 中：在那哭的小男孩想要玩电脑游戏
 
