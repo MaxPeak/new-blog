@@ -71,6 +71,12 @@ git stash apply
 git stash apply stash@{0}
 # 将指定的commit应用于当前的分支
 git cherry-pick <commit_id || branch>
+# 查看git push 默认的远程分支名用什么命令
+git branch -vv
+# 从其他项目拉取commit到当前项目
+git remote add <name> <url>
+git fetch <name>
+git cherry-pick <commit_id>或者git merge <name>/<branch>
 ```
 
 ## linux
