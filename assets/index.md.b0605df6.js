@@ -1,0 +1,1 @@
+import{o as t,c as e,a}from"./app.b1ea2303.js";const r='{"title":"","description":"","frontmatter":{},"relativePath":"index.md","lastUpdated":1619086204751}',n={},o=a("p",null,"一个前端的博客",-1);n.render=function(a,r,n,d,i,l){return t(),e("div",null,[o])};export default n;export{r as __pageData};

@@ -1,0 +1,1 @@
+import{o as t,c as e}from"./app.b1ea2303.js";const r='{"title":"","description":"","frontmatter":{},"relativePath":"algorithm/index.md","lastUpdated":1619086204747}',a={};a.render=function(r,a,o,i,d,n){return t(),e("div")};export default a;export{r as __pageData};
