@@ -13,11 +13,6 @@ module.exports = {
         activeMatch: "/english/",
       },
       {
-        text: "算法",
-        link: "/algorithm/index",
-        activeMatch: "/algorithm/",
-      },
-      {
         text: "工具助手",
         link: "/helper/command",
         activeMatch: "/helper/",
@@ -29,7 +24,6 @@ module.exports = {
     ],
     sidebar: {
       [`${getBase()}english/`]: require("../english/router"),
-      [`${getBase()}algorithm/`]: require("../algorithm/router"),
       [`${getBase()}helper/`]: require("../helper/router"),
       [`${getBase()}`]: require("../base/router"),
     },
