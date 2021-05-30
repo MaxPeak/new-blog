@@ -346,13 +346,26 @@ div{content}
 
 ### 可访问性是什么
 
-是为了方便结合屏幕阅读器等辅助工具给障碍人士带来便利的一套机制
+是为了方便结合屏幕阅读器等辅助工具给障碍人士带来便利的一套机制[MDN](https://developer.mozilla.org/zh-CN/docs/Learn/Accessibility/What_is_accessibility)
 
 ### 什么时候需要给网页添加可访问性
 
 国内目前只有开源的组件库添加了可访问性，据说很多国外的都法律都要求必须给网页添加可访问性
 
-[MDN](https://developer.mozilla.org/zh-CN/docs/Learn/Accessibility/What_is_accessibility)
+[WAI-ARIA 基础](https://developer.mozilla.org/zh-CN/docs/learn/Accessibility/WAI-ARIA_basics)
+
+### 三大特征
+
+- 角色（role）：这定义了元素是干什么的
+- 属性：我们能通过定义一些属性给元素，让他们具备更多的语义
+- 状态：用于表达元素当前的条件的特殊属性
+
+### 解决哪些问题
+
+- 超出 HTML5 的语义话
+- 动态内容的更新
+- 优化键盘的无障碍操作
+- 非语义控件的语义化
 
 ## Web component
 
